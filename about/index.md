@@ -29,10 +29,10 @@ Dunque sviluppai una semplice interfaccia grafica con AppJar e la usai per tutti
 
 Verso la seconda parte del 2020, notai che il mio programma era sostanzialmente una disordinata pila di merda, quindi lo riscrissi interamente. Una cosa interessante aggiunta fu lo scaricamento delle pagine web in asincrono, con la libreria async, che ventuplicò la velocità di download di molte pagine, come 100. 
 
-**Aggiornamento (31 Luglio 2021)** La (terza) riscrittura del codice è completa ed adesso c'è sia un' interfaccia grafica sia un installer per Windows, quindi se volete risparmiare tempo trovando i paradigmi potete installare questa app usando il pulsante download nella pagina principale, oppure <a href="/images/myw3schoolsimage.jpg" download>cliccando qui </a>.
+**Aggiornamento (31 Luglio 2021)** La (terza) riscrittura del codice è completa ed adesso c'è sia un' interfaccia grafica sia un installer per Windows, quindi se volete risparmiare tempo trovando i paradigmi potete installare questa app usando il pulsante download nella pagina principale, oppure <a href="{{ site.url }}{{ site.baseurl }}Trovaparadigmi.exe" download>cliccando qui </a>.
 
 ## Il codice
 
-Se volete contribuire oppure visualizzare il codice della GUI[^1], con cui potete **trovare** i paradigmi di un'**intera versione**, potete farlo cliccando sul logo di GitHub nella pagina principale, oppure [direttamente cliccando su questo testo](https://github.com/bortox/Trovaparadigmi).
+Se volete contribuire oppure visualizzare il codice della GUI[^1], con cui potete **trovare** i paradigmi di un'**intera versione**, potete farlo cliccando sul logo di GitHub nella pagina principale, oppure [direttamente cliccando su questo testo](https://github.com/bortox/trovaparadigmi-gui).
 
 [^1]: Graphical User Interface, interfaccia grafica.
