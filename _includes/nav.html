@@ -1,0 +1,66 @@
+	<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+		<button class="dl-trigger">Apri il Menu</button>
+		<ul class="dl-menu">
+			<li><a href="{{ site.url }}{{ site.baseurl }}">Home</a></li>
+			<li>
+				<a href="#">Riguardo Trovaparadigmi</a>
+				<ul class="dl-submenu">
+					<li>
+						<img src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
+						<h4>{{ site.title }}</h4>
+						<p>{{ site.description }}</p>
+					</li>
+					<li><a href="{{ site.url }}{{ site.baseurl }}about/"><span class="btn btn-inverse">Approfondisci Trovaparadigmi</span></a></li>
+					{% if site.email %}<li>
+                        <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+                    </li>{% endif %}
+                    {% if site.twitter %}<li>
+                        <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+                    </li>{% endif %}
+                    {% if site.facebook %}<li>
+                        <a href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>
+                    </li>{% endif %}
+                    {% if site.linkedin %}<li>
+                        <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a>
+                    </li>{% endif %}
+                    {% if site.instagram %}<li>
+                        <a href="https://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+                    </li>{% endif %}
+                    {% if site.github-url %}<li>
+                        <a href="https://github.com/{{ site.github-url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github"></i> Github</a>
+                    </li>{% endif %}
+                    {% if site.stackoverflow %}<li>
+                        <a href="https://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-stack-overflow"></i> StackOverflow</a>
+                    </li>{% endif %}
+                    {% if site.spotify %}<li>
+                        <a href="https://open.spotify.com/user/{{ site.spotify }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-spotify"></i> Spotify</a>
+                    </li>{% endif %}
+                    {% if site.resume %}<li>
+                        <a href="/{{ site.resume }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-file"></i> Resume</a>
+                    </li>{% endif %}
+                    {% if site.travel %}<li>
+                        <a href="/{{ site.travel }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-plane"></i> Travel</a>
+                    </li>{% endif %}
+				</ul><!-- /.dl-submenu -->
+			</li>
+            <li>
+                <a href="#">Autore (Andrea Bortolotti)</a>
+				<ul class="dl-submenu">
+					<li>
+						<img src="https://bortox.github.io/images/compass.png" alt="{{ site.title }} photo" class="author-photo">
+						<h4>Andrea Bortolotti</h4>
+						<p>Un ragazzo di sedici anni, un coglione qualunque.</p>
+					</li>
+					<li><a href="{{ site.url }}{{ site.baseurl }}about/"><span class="btn btn-inverse">Approfondisci</span></a></li>
+                </ul>
+            </li>
+			{% for link in site.data.navigation %}
+                {% if link.url contains 'http' %}
+                    {% assign domain = '' %}
+                    {% else %}
+                    {% assign domain = site.url }}{{ site.baseurl %}
+                {% endif %}
+		        <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
+		    {% endfor %}
+		</ul><!-- /.dl-menu -->
+	</nav><!-- /.dl-menuwrapper -->

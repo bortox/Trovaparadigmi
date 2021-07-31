@@ -1,0 +1,42 @@
+# Site
+title:              Trovaparadigmi
+bio:                'Trova i paradigmi di una versione latina in modo semplice e veloce!'
+description:        'Come trovare i paradigmi di un testo latino'
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           true  # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             it_ITs
+baseurl: '/trovaparadigmi/'
+
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Google
+google:
+  analytics:        UA-110581543-1
+
+# Social
+# if you don't have any of social below, comment the line.
+#email:              hi@asuarez.dev
+#twitter:            alsumo95
+github-url:         bortox/Trovaparadigmi
+#linkedin:           albertsuarezmolgo
+#instagram:          albert.suarezz
+#spotify:            alsumo95
+#resume:             resume/pdf/resume.pdf
+#travel:             travel
+downloadwin: Trovaparadigmi.exe
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
