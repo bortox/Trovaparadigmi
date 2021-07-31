@@ -24,12 +24,12 @@ sass:
   style:            compressed
 
 # Google
-google:
-  analytics:        UA-110581543-1
+#google:
+#  analytics:        UA-110581543-1
 
 # Social
 # if you don't have any of social below, comment the line.
-#email:              hi@asuarez.dev
+email:              bort0x@tuta.io
 #twitter:            alsumo95
 github-url:         bortox/trovaparadigmi-gui
 #linkedin:           albertsuarezmolgo
