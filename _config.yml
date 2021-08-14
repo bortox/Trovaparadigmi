@@ -37,6 +37,6 @@ github-url:         bortox/trovaparadigmi-gui
 #spotify:            alsumo95
 #resume:             resume/pdf/resume.pdf
 #travel:             travel
-downloadwin: Trovaparadigmi-0.2.exe
+downloadwin: https://github.com/bortox/trovaparadigmi-gui/releases/download/0.3-alpha/Trovaparadigmi.exe
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
