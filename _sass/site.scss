@@ -13,7 +13,7 @@ html {
 }
 body {
 	@extend %extend1;
-	font-family: $font1;
+	font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
 	@include font-rem($doc-font-size);
 	color: $color_tuatara;
 	background-color: $bodycolor;
